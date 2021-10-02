@@ -616,7 +616,7 @@ a:visited {
 
 .wrapper main .blogSection .blogSectionWrapper .blogImg {
   width: 50vw;
-  background: url("/images/blogback.jfif") no-repeat right;
+  background: url("../images/blogback.jfif") no-repeat right;
   background-size: cover;
 }
 
