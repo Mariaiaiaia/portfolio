@@ -338,7 +338,7 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("/images/15502398728_8a64a4e606_k.jpg") no-repeat right;
+  background: url("../images/15502398728_8a64a4e606_k.jpg") no-repeat right;
   background-size: cover;
 }
 
@@ -540,7 +540,7 @@ a:visited {
 .wrapper main .shoppingCart {
   width: 100%;
   min-height: 100vh;
-  background: url("/images/background.jpg") no-repeat right;
+  background: url("../images/background.jpg") no-repeat right;
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
