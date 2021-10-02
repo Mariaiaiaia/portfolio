@@ -1,0 +1,1229 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+nav,
+footer,
+header,
+aside,
+main {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText,
+.wrapper main .mainProducts .prodWrapper .productsText,
+.wrapper main .mainStores .storesWrapper .storesText {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+.wrapper main .mainProducts .prodWrapper .productsText h1,
+.wrapper main .mainStores .storesWrapper .storesText h1 {
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+.wrapper main .mainProducts .prodWrapper .productsText p,
+.wrapper main .mainStores .storesWrapper .storesText p {
+  padding-top: 2vh;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper .navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.wrapper .navbar #navLogo {
+  height: 100%;
+  padding-left: 70px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #313131;
+  letter-spacing: 7px;
+}
+
+.wrapper .navbar #navbarNavAltMarkup {
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .navbar .navLink {
+  color: #313131;
+  text-transform: uppercase;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.wrapper .navbar .navLink:hover {
+  color: rgba(112, 112, 112, 0.486);
+}
+
+.wrapper .navbar .burger .material-icons {
+  font-size: 50px;
+  display: none;
+}
+
+.wrapper header {
+  background: url("https://github.com/Mariaiaiaia/portfolio.github.io/blob/main/images/headerImg.jfif") no-repeat right;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header .headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  padding: 4vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper header .headerContainer .headerLeftSide {
+  width: 40vw;
+  text-align: left;
+  padding: 2vw;
+  color: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.wrapper header .headerContainer .headerLeftSide h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.wrapper header .headerContainer .headerLeftSide h1 {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.wrapper header .headerContainer .headerLeftSide p {
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.wrapper main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper main .mainStores {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.wrapper main .mainStores .storesWrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 2vh 0;
+}
+
+.wrapper main .mainStores .storesWrapper .storesText {
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel {
+  overflow: hidden;
+  margin-top: 4vh;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper {
+  padding-top: 1vw;
+  min-height: 27vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-transform: translate3d(-12.4vw, 0, 0);
+          transform: translate3d(-12.4vw, 0, 0);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide {
+  width: 38vw;
+  margin-left: 3vw;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide img {
+  width: 38vw;
+  height: 100%;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide .darkImg {
+  background-color: rgba(161, 117, 161, 0);
+  width: 38vw;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .carouselButton {
+  padding: 1vh 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .carouselButton #btnPrev {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .carouselButton .arrowBtn {
+  padding: 0 2vw 0 2vw;
+  cursor: pointer;
+}
+
+.wrapper main .mainStores .storesWrapper .storesCarousel .carouselButton .arrowBtn .material-icons.md-48,
+.wrapper main .mainStores .storesWrapper .storesCarousel .carouselButton .arrowBtn .numOfSlides {
+  font-size: 1.6vw;
+}
+
+.wrapper main .mainProducts {
+  width: 100%;
+  background-color: #383439;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper main .mainProducts .prodWrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 2vw;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 5vw 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/images/15502398728_8a64a4e606_k.jpg") no-repeat right;
+  background-size: cover;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide {
+  padding: 0 0 3vw 0;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .imgContainer {
+  width: 60vw;
+  position: relative;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .topImg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .backImg {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  z-index: 0;
+  width: 60%;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: 15%;
+  }
+
+  35% {
+    top: -70%;
+  }
+
+  50% {
+    top: -160%;
+  }
+
+  75% {
+    top: -255%;
+  }
+
+  100% {
+    top: 15%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: 15%;
+  }
+
+  35% {
+    top: -70%;
+  }
+
+  50% {
+    top: -160%;
+  }
+
+  75% {
+    top: -255%;
+  }
+
+  100% {
+    top: 15%;
+  }
+}
+
+.wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .ImgSmall {
+  display: none;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodTextImg {
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5% 0 0 0;
+  -webkit-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+  width: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 8% 2% 0;
+  font-size: 28px;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodTextImg .smallImg {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.wrapper main .mainProducts .prodWrapper .prodTextImg .smallImg img {
+  width: 100%;
+}
+
+.wrapper main .mainWhiteSection {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper {
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText {
+  color: #383439;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1vw;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxImg {
+  background-color: #bdbdbd;
+  height: 22vw;
+  padding: 3vw;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText {
+  padding: 1vw 0;
+  color: #383439;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText h5 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText p {
+  font-size: 20px;
+}
+
+.wrapper main .shoppingCart {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/images/background.jpg") no-repeat right;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper {
+  width: 100%;
+  padding: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingImg {
+  width: 45vw;
+  padding: 0 10vw;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingImg img {
+  width: 100%;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingText {
+  width: 45vw;
+  padding: 0 4vw;
+  color: white;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingText h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingText p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.wrapper main .shoppingCart .shoppingCartWrapper .shoppingText ul {
+  font-size: 23px;
+  padding-top: 5vh;
+}
+
+.wrapper main .blogSection {
+  width: 100%;
+}
+
+.wrapper main .blogSection .blogSectionWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogImg {
+  width: 50vw;
+  background: url("/images/blogback.jfif") no-repeat right;
+  background-size: cover;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogImg .blogImgContainer {
+  padding: 7vw;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogImg .blogImgContainer img {
+  width: 100%;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogText {
+  width: 50vw;
+  padding: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  color: #4b426d;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+  font-size: 66px;
+  padding: 2vw 0;
+}
+
+.wrapper main .blogSection .blogSectionWrapper .blogText p {
+  font-size: 26px;
+  padding: 2vw 0;
+}
+
+.wrapper footer {
+  width: 100%;
+  height: 50px;
+  background-color: #1f1f1f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper footer h4 {
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText,
+  .wrapper main .mainProducts .prodWrapper .productsText,
+  .wrapper main .mainStores .storesWrapper .storesText {
+    width: 550px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+  .wrapper main .mainProducts .prodWrapper .productsText h1,
+  .wrapper main .mainStores .storesWrapper .storesText h1 {
+    font-size: 50px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+  .wrapper main .mainProducts .prodWrapper .productsText p,
+  .wrapper main .mainStores .storesWrapper .storesText p {
+    font-size: 18px;
+  }
+
+  .wrapper .navbar #navLogo {
+    font-size: 22px;
+    letter-spacing: 6.16px;
+  }
+
+  .wrapper .navbar .navLink {
+    font-size: 17px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h2 {
+    font-size: 17px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h1 {
+    font-size: 58px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide p {
+    font-size: 14px;
+    padding-right: 70px;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+    padding: 5%;
+    font-size: 26px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText h5 {
+    font-size: 25px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText p {
+    font-size: 18px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+    font-size: 56px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+  .wrapper main .mainProducts .prodWrapper .productsText h1,
+  .wrapper main .mainStores .storesWrapper .storesText h1 {
+    font-size: 40px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+  .wrapper main .mainProducts .prodWrapper .productsText p,
+  .wrapper main .mainStores .storesWrapper .storesText p {
+    font-size: 18px;
+  }
+
+  .wrapper .navbar #navLogo {
+    font-size: 19px;
+    letter-spacing: 5.32px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h2 {
+    font-size: 17px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h1 {
+    font-size: 40px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide p {
+    font-size: 14px;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+    padding: 5%;
+    font-size: 23px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText h5 {
+    font-size: 22px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText p {
+    font-size: 16px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingImg {
+    padding: 0 9vw;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText h2 {
+    font-size: 36px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText p {
+    font-size: 19px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText ul {
+    font-size: 17px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+    font-size: 46px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+  .wrapper main .mainProducts .prodWrapper .productsText h1,
+  .wrapper main .mainStores .storesWrapper .storesText h1 {
+    font-size: 32px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+  .wrapper main .mainProducts .prodWrapper .productsText p,
+  .wrapper main .mainStores .storesWrapper .storesText p {
+    font-size: 18px;
+  }
+
+  .wrapper .navbar #navLogo {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 10vw;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h2 {
+    font-size: 17px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide h1 {
+    font-size: 40px;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide p {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+
+  .wrapper header .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .wrapper header .headerContainer .headerLeftSide {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .wrapper main .mainStores {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
+  .wrapper main .mainStores .storesWrapper {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5vw 0;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+    width: 95%;
+    padding: 5vw 0;
+    font-size: 28px;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallImg {
+    width: 100%;
+    padding: 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3vw;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box {
+    padding: 0 4vw;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxImg {
+    height: 62vw;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText {
+    padding: 4vw 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText h5 {
+    font-size: 26px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText p {
+    font-size: 18px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingImg {
+    width: 90%;
+    padding: 15vw;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText {
+    width: 100vw;
+    padding: 7vw;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText h2 {
+    font-size: 39px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText p {
+    font-size: 20px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText ul {
+    font-size: 18px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogImg {
+    width: 100vw;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText {
+    width: 100vw;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+    font-size: 56px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .navbar #navLogo {
+    font-size: 0px;
+    padding-left: 5vw;
+  }
+
+  .wrapper .navbar .burger .material-icons {
+    font-size: 50px;
+    display: block;
+    padding-right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText,
+  .wrapper main .mainProducts .prodWrapper .productsText,
+  .wrapper main .mainStores .storesWrapper .storesText {
+    text-align: left;
+    width: 90%;
+    padding: 4vw 2vw;
+    margin: 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+  .wrapper main .mainProducts .prodWrapper .productsText h1,
+  .wrapper main .mainStores .storesWrapper .storesText h1 {
+    font-size: 28px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+  .wrapper main .mainProducts .prodWrapper .productsText p,
+  .wrapper main .mainStores .storesWrapper .storesText p {
+    font-size: 17px;
+  }
+
+  .wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide {
+    width: 90%;
+  }
+
+  .wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide .img {
+    width: 90%;
+  }
+
+  .wrapper main .mainStores .storesWrapper .storesCarousel .sliderWrapper .storesSlide .darkImg {
+    display: none;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .ImgLarge {
+    display: none;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .ImgSmall {
+    display: block;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodSlideBack .prodSlide .backImg {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    -webkit-animation-name: slide;
+            animation-name: slide;
+    -webkit-animation-duration: 12s;
+            animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+@-webkit-keyframes slide {
+    0% {
+      top: 0%;
+    }
+
+    15% {
+      top: -70%;
+    }
+
+    35% {
+      top: -140%;
+    }
+
+    50% {
+      top: -220%;
+    }
+
+    75% {
+      top: -310%;
+    }
+
+    100% {
+      top: 0%;
+    }
+}
+
+@keyframes slide {
+    0% {
+      top: 0%;
+    }
+
+    15% {
+      top: -70%;
+    }
+
+    35% {
+      top: -140%;
+    }
+
+    50% {
+      top: -220%;
+    }
+
+    75% {
+      top: -310%;
+    }
+
+    100% {
+      top: 0%;
+    }
+}
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+    font-size: 16px;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText p {
+    margin: 0;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallImg {
+    padding-bottom: 6%;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText {
+    padding: 5vw;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText h2 {
+    font-size: 30px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText p {
+    font-size: 17px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText ul {
+    font-size: 15px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText {
+    width: 100vw;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+    font-size: 36px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText p {
+    font-size: 16px;
+  }
+
+  .wrapper footer {
+    height: 35px;
+  }
+
+  .wrapper footer h4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText h1,
+  .wrapper main .mainProducts .prodWrapper .productsText h1,
+  .wrapper main .mainStores .storesWrapper .storesText h1 {
+    font-size: 26px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText p,
+  .wrapper main .mainProducts .prodWrapper .productsText p,
+  .wrapper main .mainStores .storesWrapper .storesText p {
+    font-size: 15px;
+  }
+
+  .wrapper main .mainProducts .prodWrapper .prodTextImg .smallText {
+    font-size: 13px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper .whiteSectionText {
+    padding: 2vw 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer {
+    padding: 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box {
+    padding: 0;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText h5 {
+    font-size: 22px;
+  }
+
+  .wrapper main .mainWhiteSection .whiteSectionWrapper #whiteBoxContainer .box .boxText p {
+    font-size: 14px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText h2 {
+    font-size: 27px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText p {
+    font-size: 15px;
+  }
+
+  .wrapper main .shoppingCart .shoppingCartWrapper .shoppingText ul {
+    font-size: 14px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogImg .blogImgContainer {
+    padding: 3vw;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText {
+    width: 100vw;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText h5 {
+    font-size: 30px;
+  }
+
+  .wrapper main .blogSection .blogSectionWrapper .blogText p {
+    font-size: 14px;
+  }
+}
